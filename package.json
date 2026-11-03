@@ -1,0 +1,50 @@
+{
+  "name": "dsh-study-supervisor",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Desktop study supervisor for DeepSeek Harness: focus timer, task check-in and daily study stats docked into the shell.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuhaiyi2000/dsh-study-supervisor.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "study",
+    "focus",
+    "pomodoro"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "install.ps1",
+    "uninstall.ps1",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

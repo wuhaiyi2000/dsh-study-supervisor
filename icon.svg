@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Study supervisor">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#3b82f6"/>
+  <circle cx="32" cy="33" r="15" fill="none" stroke="#e8f0ff" stroke-width="3.5"/>
+  <path d="M32 24.5V33l6 4" fill="none" stroke="#e8f0ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 47.5h24" stroke="#bfd4ff" stroke-width="3" stroke-linecap="round"/>
+</svg>
